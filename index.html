@@ -10,7 +10,31 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a href="#"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-4">HT2 9490-18-3141 A</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#puntos-clave" class="nav-link">Puntos Clave</a></li>
+                    <li class="nav-item"><a href="#algoritmos" class="nav-link">Algoritmos</a></li>
+                    <li class="nav-item"><a href="#bd" class="nav-link">Base de Datos I</a></li>
+                    <li class="nav-item"><a href="#compiladores" class="nav-link">Compiladores</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
@@ -21,13 +45,13 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Puntos Clave</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Algoritmos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Base de Datos I</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Compiladores</a></li>
+                <li class="nav-item"><a href="#puntos-clave" class="nav-link">Puntos Clave</a></li>
+                <li class="nav-item"><a href="#algoritmos" class="nav-link">Algoritmos</a></li>
+                <li class="nav-item"><a href="#bd" class="nav-link">Base de Datos I</a></li>
+                <li class="nav-item"><a href="#compiladores" class="nav-link">Compiladores</a></li>
             </ul>
         </header>
-    </div>
+    </div> -->
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -78,7 +102,7 @@
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
-        <div class="row">
+        <div id="puntos-clave" class="row">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-bold">Puntos Clave</h1>
             </div>
@@ -91,7 +115,7 @@
                     analizar problemas complejos, diseñar soluciones algorítmicas eficientes y resolverlos de manera
                     óptima. A lo largo del curso, los estudiantes trabajarán en problemas y proyectos prácticos para
                     aplicar los conceptos aprendidos en situaciones del mundo real.</p>
-                <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+                <p><a class="btn btn-custom-aqua " href="#algoritmos">Saber más &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
                 <img src="img/pc-bd1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
@@ -101,7 +125,7 @@
                     conocimientos necesarios para diseñar, implementar y administrar bases de datos de manera eficiente
                     y segura, lo cual es esencial en muchos campos y sectores donde se utilizan bases de datos para
                     almacenar y recuperar información de manera efectiva.</p>
-                <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+                <p><a class="btn btn-custom-aqua " href="#bd">Saber más &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 text-center">
                 <img src="img/pc-compiladores.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"
@@ -112,7 +136,7 @@
                     profunda del funcionamiento interno de los compiladores y cómo estos desempeñan un papel esencial en
                     la traducción del código fuente a instrucciones ejecutables. El curso podría incluir técnicas de
                     depuración y el uso de herramientas específicas.</p>
-                <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+                <p><a class="btn btn-custom-aqua " href="#compiladores">Saber más &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -121,7 +145,7 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="algoritmos" class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Algoritmos</span></h2>
                 <p>El curso de algoritmos es un programa de formación que tiene como objetivo proporcionar
@@ -131,75 +155,100 @@
                     operación en un contexto computacional. A lo largo del curso de algoritmos, los estudiantes
                     aprenderán sobre una variedad de temas, que incluyen:</p>
                 <ul>
-                    <li><span>Conceptos fundamentales:</span> Se abordan los conceptos básicos de los algoritmos, como la definición de un algoritmo, su estructura, características y propiedades.</li>
-                    <li><span>Análisis de complejidad:</span> Los estudiantes aprenderán a analizar la complejidad de los algoritmos en términos de tiempo y espacio, y cómo evaluar su eficiencia en diferentes situaciones.</li>
-                    <li><span>Estructuras de datos:</span> Se estudian diferentes estructuras de datos, como listas enlazadas, arreglos, pilas, colas, árboles y grafos, y se enseña cómo seleccionar la estructura de datos más adecuada para cada problema.</li>
-                    <li><span>Algoritmos de búsqueda y ordenación:</span> Se estudian algoritmos de búsqueda y ordenación populares, como búsqueda binaria, búsqueda lineal, BubbleSort, MergeSort y QuickSort.</li>
-                    <li><span>Algoritmos de grafos:</span> Los estudiantes aprenderán sobre algoritmos que se aplican a problemas en grafos, como el algoritmo de Dijkstra para encontrar el camino más corto, el algoritmo de Kruskal para el árbol de expansión mínima, entre otros.</li>
+                    <li><span>Conceptos fundamentales:</span> Se abordan los conceptos básicos de los algoritmos, como
+                        la definición de un algoritmo, su estructura, características y propiedades.</li>
+                    <li><span>Análisis de complejidad:</span> Los estudiantes aprenderán a analizar la complejidad de
+                        los algoritmos en términos de tiempo y espacio, y cómo evaluar su eficiencia en diferentes
+                        situaciones.</li>
+                    <li><span>Estructuras de datos:</span> Se estudian diferentes estructuras de datos, como listas
+                        enlazadas, arreglos, pilas, colas, árboles y grafos, y se enseña cómo seleccionar la estructura
+                        de datos más adecuada para cada problema.</li>
+                    <li><span>Algoritmos de búsqueda y ordenación:</span> Se estudian algoritmos de búsqueda y
+                        ordenación populares, como búsqueda binaria, búsqueda lineal, BubbleSort, MergeSort y QuickSort.
+                    </li>
+                    <li><span>Algoritmos de grafos:</span> Los estudiantes aprenderán sobre algoritmos que se aplican a
+                        problemas en grafos, como el algoritmo de Dijkstra para encontrar el camino más corto, el
+                        algoritmo de Kruskal para el árbol de expansión mínima, entre otros.</li>
                 </ul>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img src="img/algoritmos-500.png"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="">
 
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="bd" class="row featurette">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Base de Datos I</span></h2>
-                <p>El curso de bases de datos es un programa de formación que tiene como objetivo proporcionar a los estudiantes una comprensión profunda y práctica de los fundamentos de las bases de datos y su gestión. Una base de datos es una colección organizada de datos que se utiliza para almacenar y recuperar información de manera eficiente. Estos sistemas son fundamentales en el mundo de la tecnología de la información y se encuentran en diversas aplicaciones y sectores.</p>
-                <p>A lo largo del curso de bases de datos, los estudiantes aprenderán sobre una variedad de temas, que incluyen:</p>
+                <p>El curso de bases de datos es un programa de formación que tiene como objetivo proporcionar a los
+                    estudiantes una comprensión profunda y práctica de los fundamentos de las bases de datos y su
+                    gestión. Una base de datos es una colección organizada de datos que se utiliza para almacenar y
+                    recuperar información de manera eficiente. Estos sistemas son fundamentales en el mundo de la
+                    tecnología de la información y se encuentran en diversas aplicaciones y sectores.</p>
+                <p>A lo largo del curso de bases de datos, los estudiantes aprenderán sobre una variedad de temas, que
+                    incluyen:</p>
                 <ul>
-                    <li><span>Modelado de datos:</span> Se enseñará cómo representar y diseñar estructuras de datos para resolver problemas específicos utilizando modelos como el modelo relacional o el modelo entidad-relación (ER).</li>
-                    <li><span>Lenguajes de consulta:</span> Los estudiantes aprenderán cómo utilizar lenguajes como SQL (Structured Query Language) para realizar operaciones de consulta, inserción, actualización y eliminación de datos en una base de datos relacional.</li>
-                    <li><span>Normalización:</span> Se estudiarán las formas normales, que son reglas para diseñar una base de datos de manera eficiente y evitar problemas de redundancia y anomalías.</li>
-                    <li><span>Administración de bases de datos:</span> Se abordará cómo administrar y mantener bases de datos, incluyendo tareas como copias de seguridad, restauraciones, control de acceso y optimización del rendimiento.</li>
-                    <li><span>Indexación y optimización:</span> Se enseñará cómo crear índices para acelerar las consultas y cómo optimizar el rendimiento de la base de datos.</li>
+                    <li><span>Modelado de datos:</span> Se enseñará cómo representar y diseñar estructuras de datos para
+                        resolver problemas específicos utilizando modelos como el modelo relacional o el modelo
+                        entidad-relación (ER).</li>
+                    <li><span>Lenguajes de consulta:</span> Los estudiantes aprenderán cómo utilizar lenguajes como SQL
+                        (Structured Query Language) para realizar operaciones de consulta, inserción, actualización y
+                        eliminación de datos en una base de datos relacional.</li>
+                    <li><span>Normalización:</span> Se estudiarán las formas normales, que son reglas para diseñar una
+                        base de datos de manera eficiente y evitar problemas de redundancia y anomalías.</li>
+                    <li><span>Administración de bases de datos:</span> Se abordará cómo administrar y mantener bases de
+                        datos, incluyendo tareas como copias de seguridad, restauraciones, control de acceso y
+                        optimización del rendimiento.</li>
+                    <li><span>Indexación y optimización:</span> Se enseñará cómo crear índices para acelerar las
+                        consultas y cómo optimizar el rendimiento de la base de datos.</li>
                 </ul>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img src="img/base-de-datos-500.png"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="">
 
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div id="compiladores" class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Compiladores</h2>
-                <p>El curso de compiladores es un programa de formación que se enfoca en enseñar a los estudiantes los conceptos y técnicas necesarias para diseñar, construir y comprender el funcionamiento de los compiladores. Un compilador es un software que traduce el código fuente escrito en un lenguaje de programación de alto nivel a un lenguaje de máquina, que puede ser ejecutado directamente por el hardware de la computadora.</p>
-                <p>A lo largo del curso de compiladores, los estudiantes aprenderán sobre una variedad de temas, que incluyen:</p>
+                <p>El curso de compiladores es un programa de formación que se enfoca en enseñar a los estudiantes los
+                    conceptos y técnicas necesarias para diseñar, construir y comprender el funcionamiento de los
+                    compiladores. Un compilador es un software que traduce el código fuente escrito en un lenguaje de
+                    programación de alto nivel a un lenguaje de máquina, que puede ser ejecutado directamente por el
+                    hardware de la computadora.</p>
+                <p>A lo largo del curso de compiladores, los estudiantes aprenderán sobre una variedad de temas, que
+                    incluyen:</p>
                 <ul>
-                    <li><span>Análisis léxico:</span> Se estudia cómo se identifican y clasifican los tokens (elementos léxicos) en el código fuente, como palabras clave, identificadores, operadores y constantes.</li>
-                    <li><span>Análisis sintáctico:</span> Los estudiantes aprenden sobre la estructura gramatical del lenguaje de programación y cómo se verifica si el código fuente sigue las reglas sintácticas adecuadas.</li>
-                    <li><span>Análisis semántico:</span> Se aborda cómo se verifica la coherencia y significado del código fuente, asegurándose de que las operaciones y declaraciones sean válidas y tengan sentido.</li>
-                    <li><span>Generación de código intermedio:</span> Los estudiantes aprenderán cómo se crea una representación intermedia del código fuente, que facilita las etapas siguientes del compilador.</li>
-                    <li><span>Optimización del código: Se estudian técnicas para mejorar la eficiencia del código generado, como la eliminación de código redundante y la simplificación de expresiones.</span></li>
+                    <li><span>Análisis léxico:</span> Se estudia cómo se identifican y clasifican los tokens (elementos
+                        léxicos) en el código fuente, como palabras clave, identificadores, operadores y constantes.
+                    </li>
+                    <li><span>Análisis sintáctico:</span> Los estudiantes aprenden sobre la estructura gramatical del
+                        lenguaje de programación y cómo se verifica si el código fuente sigue las reglas sintácticas
+                        adecuadas.</li>
+                    <li><span>Análisis semántico:</span> Se aborda cómo se verifica la coherencia y significado del
+                        código fuente, asegurándose de que las operaciones y declaraciones sean válidas y tengan
+                        sentido.</li>
+                    <li><span>Generación de código intermedio:</span> Los estudiantes aprenderán cómo se crea una
+                        representación intermedia del código fuente, que facilita las etapas siguientes del compilador.
+                    </li>
+                    <li><span>Optimización del código:</span> Se estudian técnicas para mejorar la eficiencia del código
+                        generado, como la eliminación de código redundante y la simplificación de expresiones.</span>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img src="img/compiladorres-500.jpg"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" alt="">
 
             </div>
         </div>

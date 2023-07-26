@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;700;800;900&family=Poppins:wght@200;300&display=swap');
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p, li, a {
+p,
+li,
+a {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -68,10 +71,46 @@ p, li, a {
     background-position: center;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 700 !important;
 }
 
 ul li span {
     font-weight: bold;
+}
+
+a.btn-info, a.btn-custom-aqua  {
+    color: #fff !important;
+}
+
+.navbar-dark span {
+    color: #fff;
+}
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
+
+.navbar-dark .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .nav-pills .nav-link.active {
+    background-color: #00cfa5;
+}
+
+.btn-custom-aqua {
+    background-color: #00cfa5;
+    border-color: #00cfa5;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: block;
+    }
+
+    .nav li {
+        text-align: center;
+    }
 }
